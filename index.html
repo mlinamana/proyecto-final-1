@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FORSAKEN | Dark Archives</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            FORSAKEN<span>_</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">INICIO</a>
+            <a href="#supervivientes">SUPERVIVIENTES</a>
+            <a href="#killers">KILLERS</a>
+            <a href="#lore">LORE</a>
+        </nav>
+
+        <button class="sound-button" onclick="toggleSound()">
+            🔊
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <p class="system-text">
+                    SYSTEM // CONNECTION ESTABLISHED
+                </p>
+
+                <h1>
+                    FORSAKEN
+                </h1>
+
+                <h2>
+                    THE DARKNESS IS WAITING
+                </h2>
+
+                <p class="hero-description">
+                    Entra en un mundo donde sobrevivir no está garantizado.
+                    Elige tu personaje, descubre sus habilidades y prepárate
+                    para enfrentarte a lo desconocido.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button onclick="scrollToSection('supervivientes')">
+                        VER SUPERVIVIENTES
+                    </button>
+
+                    <button
+                        class="secondary-button"
+                        onclick="scrollToSection('killers')">
+                        VER KILLERS
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-placeholder">
+
+                    <div class="scanline"></div>
+
+                    <div class="placeholder-content">
+
+                        <span>IMAGEN PRINCIPAL</span>
+
+                        <small>
+                            
+                        </small>
+
+                        <code>
+                            <img src="https://tse1.mm.bing.net/th/id/OIP.XM7JVhptNdSL4BLQ9qOklQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                        </code>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats">
+
+            <div>
+                <strong>20</strong>
+                <span>PERSONAJES</span>
+            </div>
+
+            <div>
+                <strong>12</strong>
+                <span>SUPERVIVIENTES</span>
+            </div>
+
+            <div>
+                <strong>8</strong>
+                <span>KILLERS</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>POSIBILIDADES</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUPERVIVIENTES ================= -->
+
+        <section id="supervivientes" class="character-section">
+
+            <div class="section-title">
+
+                <p>// ARCHIVE 01</p>
+
+                <h2>
+                    SUPERVIVIENTES
+                </h2>
+
+                <span>
+                    ELLOS CORREN. ELLOS LUCHAN. ELLOS SOBREVIVEN.
+                </span>
+
+            </div>
+
+
+            <div class="character-grid">
+
+
+                <!-- 007n7 -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://th.bing.com/th/id/OIP.3eIzfhOh7GFVJOk_i8v4PAAAAA?w=132&h=184&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            001
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SURVIVALIST
+                        </span>
+
+                        <h3>
+                            007n7
+                        </h3>
+
+                        <p>
+                            Especialista en sigilo y engaño.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BUILDERMAN -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://static.wikia.nocookie.net/forsaken2024/images/d/db/Builderman_V3_BadQuality.png/revision/latest?cb=20250616223125" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            002
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SUPPORT
+                        </span>
+
+                        <h3>
+                            BUILDERMAN
+                        </h3>
+
+                        <p>
+                            Control del área y preparación.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CHANCE -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,UklGRhwZAABXRUJQVlA4IBAZAADwcgCdASoJAbQAPp1GnEslo6KiqFK8ILATiU3ET34AUJtIs8ddn23/F/ufSTjb/FPi/9H1z7fvzT+cV6fPNV6pD0KPLp9pf++2xVzQ/b+Ivmf+fzICdf+D63/7rw14Ar7Pl745337zhPx/OP7KdIniUfdfUJ/TPrH/6/mN/aP+FwOfRNNm1j7WG5IytJyXCqzYdruC/2hY6MoqFgJOLaz0a0+92nLTOmxE7c/srOp5Fr/5pcsxSVfwqE/fjBmMoPpq0cnau6yv6WJAwWyERpxpD6vLXBgenBB8E9Et617JrP+8IC5vZkQOsYIsfIzczmb8KsvhJCdNuz4XtRCqpu1Gjl2Y4CbTZF2sLeUYXVA57HE+Hotj4XjLVMGC1+ifPli1/eDDelSdw5CZ4qPHkUgK4JufdUIb0c4r5kPnl2iTlpDURvM3rw7l6F6kT1L/yc/iG5/cHZ48Y3gTbso1ABYkfWfz7CouHmck092578eFMEwq/TQw2BE7F0k62r08E35YCUGqfPD9CgHn6oauQeCcsnM7IGaQb16Kuu8HHXMOTQiUyNu34ZMbYrcHCjH53miDvHKAmeua3Sw8PnLdzHo4oS53vOeYlTdw+KQE0t4mOejSqTkO+bstSWCLMFwcgbAvdqObKMewFG1kbvPc1fVrdTD/M59s+9AQchuMTCPKVlzNQ5No5derUZ3PIG/9n+PwE6fKPj677/mNtZT75gBm5hmKy4TB8mK7m80pgL2qe9GhbpqfAlrp91y0UsIoTCF2w1Xd9fVIRbrRx/K/fwJh+moveypwJ01W8zvJghGLYVfOjGk8umvmbfhD1pckTkhKMJE6rCW9+lPs6kVNrdYnu6mNiCB7XYTZaUx6A61mROcKAG+Ga0TL+FqYEggcA1RcKpAuAGR4OaeZf2lJ9uuodqjIrzQ9uro6R4c4IG+sdzwg3jekvQnsQWCBLPQKJsc2FY0VTPCXLK4fdS90/hqHVA/hzqWiOHGpz2mdra2a3M+LwBHK9dl5kGyAwdf1FJS+TnI0ZYrRz65d7B6dnZCa0jayFLy+7VC8CcZk8ax0DQNX4pvd+Xr7ocKWJp4KJ/pFxKbjdUrW0d+bU25ETDtzcl1v7dFYIsWMqaBS8skAMvkVimrRz2yswCXKN4/3Fs+GvMD6nDlG3OpKdeJJrp1c4vGuqKtJWU4J1QMUlf4J2KpDlOodNR1D9hNleIho+GHbOjq0nq0misejyP6iZbCmAP7+bUbcbPk/rN0hDj9iCd17hRAMGlVQTPt9cy/3t1GiEqO289w50NfENw+B6xQcUh1D+X751toSuRvf17zMQX5ZyheMp30UvJUOLoLlRjaFMLKbHBVsyxc7UbzLv4e8vXljYQfgtdi9iPJ/I2WP1nBAkVtgw3YUf21MnK7j9izvUiL7JmfLYuBaHKD7iuHCn2cSVy018UL5W7w4UoMzGPjPaneMgHO2Py387mpAAq1ML9EtHl6lZdpJIOXv/85/ZvULNt+x6gRnJZr6ujqVR0Da8Qrv7/+DXqYGv6cIWnOgMVtgAK02W+oHYbIH32v2Ac9tmQPr/0hVK8H73rrn4XJXdwq3tUPKyf3wtkbRMt3B+ixkkSKRJJr+6CJXe7AAJ60mL0jgSNFAk/dlCa2DNMvRhIkwKckoLWcBhWTr5BrdlXlkTWFW7BuCq2k9FIkfcTmrMxoKuVfxs4aoY9XlsSlym9NbBwlhpu+GLnh4d1geXxHLBSsU2Z9XJcjh/lVhI4StDRlqklkkPgMa5zhbO1wY2vh/k7qwb9Nj+i4XbY9JjsVCx56gjAhkSnDzJPqSaCyK5nC75rmXr9u/hcAgrYPL/MmbgIJ3U7Fg9zG/uxGGDLhS0sEfTivP0NXAhmxY/ys5VZ4vtJO9omgVc5iulBsrmkLhvbjw4BsfRRqgr5Qxwr5LfVhCuowYBrVOdav9yV9BQRNm8WwXhy2TYqsE8jmL1MwXsUkf1tYHfUM+cutQf/rQsuwTO/EtniGK6l8gY4p8C+WgpLgj5CPoM7+Z5lnP5VrISK/x1/rQNgP23ZQamNRfoeQ3WmkxNy1sIvPGbr8XTrn9szhUZq/sPEvSBwSP+9DPqSEkfOdiOJ7PhtepwbGThsQYgxvCnmKAUziKg6+TMyOlgkIl5Z24xOoyogSsVfBMTNDvwNcTOv7Z5fLxRdN2ti2gHBDUznNWPDtc5WhNWjk4vBGqHy0pYLQm7r768uDZA4RQWFu+TEPVg7lZ+Vnd61QuK47DtpeYb5yoeXe+FMGnsa2DF/Go1uy/lT7LI6ozZiqFYbsyQ+ATNcOzd3uy6gNawGlpCYPW23Bp5fzOuVEK0kLO8Qukrn0wopodBA1rAkrvOlzJH6Il+8alqt1aMHljsBTD9e/bY+GxMAEQTVjKmqg1QCrL1+RXpGAPc6Oqq+pwg3Y5iRXdBOCmkXxAPlhTcVHytNxBvKD4GBe7iQJfcPjoS5QGwIISJFK/rpDkZlD1mOInkxfDN7Z25TKOcu6k+6V2GODbXZUF0EzVG7P8cE3mDS/Aj0txQolZ38d4WN7eJvrmc+JyFqUC6Ho1sr46yRV9SM/6N2jgw5AAfsfrs0B1w7Hfxw4xwU+SEQLSPVRcGnv6AJKUV5ce8ra+pdmT5QaTcLRtTiL8o6IcWFeVLvPt151jeTGdLoR8Ov1NItht8fvlyfHmDq+Fd8WsJN/vm7iHMENf+EMkp8NWjYcvG1f9lYzmW3+iAlBTkJUlm1YW/VkuNoby6xstFhHNs+zklJw7bviemv8l5550PdDr+bO0vvQ9o5cXjh/66yvWuAblj3ReO7qYYGNHKsiRelpl+oDfw5xzs7eaTCWGxFezEropCpYjpxaGHOFrQ+HCmVJnWzry0fQyiiakROh6h7+U/e1acztsjKBvFqrwlZNz0a38+KSdLU9tgKdwjkN81QSGTXwW4DIQOCq3zKVjJl3Z8hCj+0xEBEHSW96RHJR0njsNvdFJLatElAxppy997R9wKVHAvz52+EyTayqs/yU6T1vvTa3YaldnZf/odk71H0a/ZmhdT6ngSdUJpm0VXOyZY/A3u977ct+UN/+RUY0Zqhcg/opm8uKP4m8yQA2iLJQTPchMIhhbTU9PznJL5Y6PypVXBCOYHiHtzXl2a3OKzmZCdmbfuzallpKQltsyVlGBy/TRdbewIyP2ClXCR+UcY1GAArfCjQ/nr4wywFca34NVbq04PgFrUYUWEKhisnsI9ggRmNouGl5jt8KBko/UPaB+tpCHvbyLl0+CWa/7CT+dSb3VycF0rVr1gk5s4GJIkwtPqlycUIKPQ+0bEQFjUbfaMxcJa/+j/Yvpn7kVuuBef9ZdvgoAK+7Mffjoejnf9iewoDjSjF+eP3pxiXcncqoeyOG+EVpkLVTcMqdOepemr8yQAjhzyPEI3FmR+qMYUuYqq1vSst2bjuZDc05yeypwr7CH1dwZiFV/6WSKQ9/0PSWVG/sG4EcV+g8PTA4RbxEyfo3/Rb9HBfgQ+5K2+sNdcr2CTjDhj80PACY3fRNbtnwaYREGLhGLAfFAo1ysAdESuuy1sTNZCdMUrkAf4+B8ut+DhrwlAzzxUqlrZbypBTh1LDuJgfmHnXF9pVyTk1jJYp3QezQFeAzPyHi+/j3O2V7QQG4VsPuT6eN8zSGt/QpNNgXnD0vfIQ64zfpJbkeCbl+0n6E4WF8FfFqka4wB7yWlGWPfWexcFNRqvAUE/7HO/RCTUH+3yejViYTSkRujHn/sLp4IT6qQKYRZNGOUtA4D/kbuDqAFV2DZQqs/Us07GHmdE8rPCKK4C/5Ai2Zlcyd4RbI4ej+4H7dBS3sHDBny9lpXXTDRZDQ23Xprd4WOz7MsGMibhHnzzHj9T1FaxvdMR07ZmmrCm3mP/6NDMzab5yiXhYiCD50j8y1ijQyXyoYACLOwGmTWnDVSSwWhKSXvjwwGBRzdssnmmKAMZ1EFsDZH//xT1zuMpJp3EngSxRmm8DKDUB+CZrA2jaKjACAlAR9gan+D3UdDUvqAemMwRJmqKwXzb/trINuf+hcZLQeajGeIR1wtKMnZvgswHzc8xpd1foRgfS3CxXpPVUAWPgy2eDgMShfwBiVe/GYshihnJaCo0Dt6X3tky9BTvuCUwJ4WYc6Xb6tTsmB/a9OTIQdbpeDUHV4jjwvHj93qyf7IMZI6Wf9P3vu7bcDugVyD2nSmPNXY+hw4Fd+Aswj2L4kcXR1q6HF3ApmuFNhmUXLiVH22ATBqM6Prz95mp4c/D/VwXzDa+HximTM/WOJJHQlU8HLPC4sc4hBxsYvT596tA1fdUKMdfuh8vIIByj5Sm9oAgbJkWyHjvtdCW+s1eMURpZzeVgHbO9At1FFc6zKUCouJA7ON1NMqvCPbDSQCB+twziurVLhX+364iRh8KzYce+I8pkjIo8lUiRYMxCyMexNC2vPc2N5A8NXfn5tU1Xg0Fo8K488ND/DJ5D6vfI8KBgJQt+SYO3H9V7BUHTdSyP1rx+rvDT9SPJwwFt0P/C4aTjiN0t2eDLgcX2kvYm9pC0sh+GSrqt8tQUuxLpUCX/zyhomILqcSAjUQpOzT6mHLbyArL+hww77ADuzQDyCzLkmL1+h/TzXoPkFXPWEFfQSEfKodSh2aa/dM8DAC5uqo1Q8uKiHQbD6DxHdYNyGem+n+ZO4M5lZuH466okcjmOYApJE1w3afOhE7EC0W7cnQ2icPJKHTzt9jaH+x0mFvqDgD4IiH0DuTe5N51YwM3iSmkKReenJXqFPgalSqtlIaFYjc1DbatOfPz3pYfK0SMSc5pBQvFjSYLXS1A2AGBfOvpCyLLnJrVYLPqiFlrJnCx5sBbdI86knLZg5ONuRV7MpACDYmbhwSgKcNDdtFhi0GO4SM1pSGups5h5MjtFUq0GeihKZRxMojnzY/oqxg8VkcsppiklDHv+ULWT52SN7PTmwHhkI6j+jpybJ4mGetO1Iah7VJWtsjqWYn2zGmkZiYecatDSzxWp5v46ELesTlRdOumVblb0vTWRRZtKsuAyZ1lwD2QP7dsbi/tcsN2GY0erVz8tFaG73DnH5raTJEmh+Uw3URhU/uoCOpF8Sq2HtL67HFF83uGz60DU52rdkfXTt/1y9HWM5jT5FNI8vuK1Oy/h9OOgce4ZtaL2n+NK8L1zKiei8fmaqPlbCZRttZAxhDtkB3RofwW0taV/ySf7/skJklULdXVGgPdzczJLJH3vWF8tCgcCVNre2k/4VtvOEfWJDU9z1CF1S378gCiTKG+VFk534ZCjrnxpavo/LbUFYzf1rPZRbu5igOoeAV7/T6FuVfgID702Kj03nzlRNizu7sBrHTc9BGtdQBjykTmndawppd3oRUcTXZMWMlLEoBVWT3l3Vh9+y5rq3n7Ptw4bMQ8csepPtFswdy6eNET79NXIqHvBZwnlTYEfFSFrEBbEx1Q3Ha5MwTGlQrNVbBuN4lCwahZTgbxOdJbt1krdlvzde26sw2axVLE0HpPMhxFj/DMbgSkPwPkkPaAd4dsG3erkuigMEe3P4oshpTHI1AmT1xM/TJYSzzMkPd/jVGCKyce58itquhkt4faviBAY+aPilsczTZKHorRrKAaoGeqbYyDO2zLuEJxXZO9XNKh7RF1Vd1+KOqhZsDHy8iVl4sHgiA3k8r819d8dOV/O4fLNk9u6lJmm3d2+6PHpc1wr6GgKFRVO8iYLZBd7MZ0xAFAkvmeGNb2lvQhRGG7wgOtLPeZlbKW6eUn3zeCS2OgVj80cM8bPW4qiE/p/d+8EljV9XCFOqA96179Ro0vEkucp2D1R9gq3CvNKhhMMcdM/GWjRh8f2wDJBAAz+MhwfO911rYaeHvh/erpUwc6oPiU+iUZXuO27amPax8QTONFEriEyBAjAtrT0ERo6kpqL7Or7VDGnHrfoDkuWDKoB+dUbIxS7okFGeKqchkh2iPH6HmqKVUy/B5kefRoWMQU8sV6VbbM63XN+Jo3K7LoPavpywzGtOJLvQfLBdWNwYDql8RcxaBUHQVTR+B8kxU/XJWG4Vhz5o+2sZfN3OJULEowDXumcfZBn0H0jXsVoDGx1edvOa2xJ5MmNtW102lBtb5+D6H3YY/SpASoexROIZhS/+VRDUYuppKGLvvbnCRMBIv6a3dzYfexKJIDDhSGB0MjamBVNg6scfEsc8uf3XOiPFdNKxdspTjDzvcwdn0MfrT6jpkpmHQKCA76Pp7Rc8SoNLlC7uPj2FW9ojz9hrlk1egs/lXo/cYVTwkGA4XsmywxZLMYGzX0oWbb8m+KQyZO7FgszQbQkiHTxjgM+IDy4Ty6o8+ggfCWUIVpaU3ru6oEEbV7jC9scKGh1eVEHdM/PROaaiQJ/IqkrrCbJ3RLoJGl9ivznYw4LKLd/Ee2hY/zjoEqU1TIBHKnIpXyCYALN1EweGUlkD5XDZHktIrkXK6YpcazOCi8SofOmuKX0p4VlRXucgW9eoOPcpJp891KLjZDSNjnVpDBI2aGZnpxQCOSoc8m4QaeTtiLrJlW05UIEaLLVnO/yYMotLm/8/1/XmsVZfzyYcordrtHOHvipL5GxRjeNbUePPWfavosIQBjpS3gfPJYSstO9DDFhSElxKRZ/NRyDgCjv4ACj3+8Bayi2VLpaocja+wh10Tstzx4Tri+VwtFzSBpqhCUgPhYqGnm5lcKSP3GDLNK9uduxqnmB/akwdzkxwD3WZEUbAvystuTuefLGNoNiYxcRq17Fxl38TLPKMHjnL2Cy6HaUKpG4ztAmC+V4ebImxwbbBtZdFCbsULZkfE0J1waR4q6h9dFIIRTVpEf0W9rKCCxDyKRvdHWRxnUw9N+qIWDfBcj7kzb/WHoZ61l7tdmxuVCgBPiIorGndRUgNgU6mTiXo7+dNNEptaKM91lG3y1vqs6Ib4EYqrF11PS0MueVFW08ixb11v2FN8KIU/FMF9fFh7LNkRZnxetfztyUlxsc+zJdhuSryHvVwgGWKOPtMWDOZ8B5vlnB44bBYRisEtzZZgT/dt2hd9SsESopEYDaZFYYkWr8G9wrDPqVEB5IAxBw6MjGLJqwF9ayqifKDv0OntnYBCC6SWgn+scadLJHzloLiA1BES9oo4GOqKnS0VcZ2eU9ufhQlF1Xwae5TXcA1W38ikM46zvE+ebefw18PydYcd4p0YHm0p1Vr1TeDd+OXSp/YsrpOS4ZsrchCQcJARDPmKaHdXVvI29+gTCTv4RSbl0RVfcBdjP3cjz5X1M69DB2RlUfsAv8rG23ewjZvexVaJf+uKR4/QU4cRtnOnZrpmU5J47yX9LTKRPQk9ihlwC/yEGHngN3o2eeDD/KMa5suAZZRNiuMbDnCdzOTetkzh+pRqGq05Q84QHYugQypGap/6n+voQZ1kA3nAK6PR8G50II50Y2FTRMcM5p3mJtZXE/spZ+Xw8G6tCLWhju576lEcmZnCYqf6pNXDM+zY64nFshVuF6Cvx5h1s9aEsfA5P6UYlExRSo5I0I33BWBvZ4CJPz49bo3Wi+c/0lBL7+cnPyQY19jEUxwf9b2sGXZtjgXeH6Audu4xEdAFWHfJwzA6ztDWbIBRFhCHbdBwwZmDtmVV0DCaI7RaqQbzFEUv/tJdPPhBuW0dI+2NGOK4PvJ93Thpn3Mqto3K+Npczz54Y7oPYNG+D6ue+vGZAMEnwXW2xFNgsj0f6SvWFPEVTLe1TGI6dzWpYjIjFSBSpovgK7u9y7iEikfxgW6wAjm7I0TL/zwCBdVmOoyCmu1haFJg9Gw1kUW08uO3hc3qWDGiyZKPj27AV4b4E/zywQ62HECi6R35HxQTdpkudnEkhdayf8tWs+4zT166WDlXGmlL7NqhgCcm4DtKZ8+H7N9vQgQkYlZGJrWYoAh2cQkwQaT6/mkGUDUJ+0pb46LMyZTqHzA/JBuoSFz9pC7iQ2uv7hfadRAuLJNxm1Kkl6ohQ6sQEoA0q6IXt5r9/ibRThWPgCeFLwBSeyCa6Ad1P7GHRP8TBkRj9X9SkyCg6mPBiGg2bfwVV8dpS8fpkR1097YMVyba5ZcXM7UCAoYwVJeQ3vOfLG5US4RoOYDsU68G8rMYmbhtAjixlhFeVHx7IZbieI/diPrF9BvSYSFrCgEEsMBMrNxZdYWjy6StgflC7+OgfNxX+4OEcnTkWtcd+TbGQKv13JxY7VMtKOFmUZ9ReI7imr73IOTIMCQK9vSAfUoGF8HBAIJHpVWai+/2DRig0/Orh4hEc8t+BYAD9x9Mr6RTaSGSJVewhRpddbz1PdnTHujhn+pTL/pyLX/G7UY8uO1l3qDEmkhWI6ummt9jE7zXuDzpyeO+6cuS/q6lTPqvKlmx3rTbaJEOUFP+CTWIVwOzcQFzjLHpaL8MzIe4NeePHy4/jhbYQzFGgSWZWhhvx6+7XRtCLbNKRNbobMi/IAKCBXEbIui77NclkAGK6cJGX7SsCnZV/D4QodEeHEn/dUwApiYwycMWcDAb9dDqSx6VmWToYKF6DXVOU4tDgnSjZD8SENhAAok5V0MW0znAAA==" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            003
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SENTINEL
+                        </span>
+
+                        <h3>
+                            CHANCE
+                        </h3>
+
+                        <p>
+                            Un superviviente basado en el riesgo y la suerte.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DUSEKKAR -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://static.wikitide.net/damnationwiki/thumb/4/44/Dusekkar_InvIcon.png/1200px-Dusekkar_InvIcon.png" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            004
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SUPPORT
+                        </span>
+
+                        <h3>
+                            DUSEKKAR
+                        </h3>
+
+                        <p>
+                            Protección y apoyo para el equipo.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ELLIOT -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.KiaALtly3IN0D9YSyjZk3gHaG9?r=0&pid=ImgDet&w=474&h=445&rs=1&o=7&rm=3" alt="">
+                        
+                            
+                        >
+
+                        <div class="image-number">
+                            005
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SUPPORT
+                        </span>
+
+                        <h3>
+                            ELLIOT
+                        </h3>
+
+                        <p>
+                            Especialista en curación y apoyo frontal.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GUEST 1337 -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            006
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SENTINEL
+                        </span>
+
+                        <h3>
+                            GUEST 1337
+                        </h3>
+
+                        <p>
+                            Especialista en predicción y combate frontal.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- JANE DOE -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://th.bing.com/th/id/OIP.p8MVcYb4FydgwKODcrEvtgHaHC?w=191&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            007
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SENTINEL
+                        </span>
+
+                        <h3>
+                            JANE DOE
+                        </h3>
+
+                        <p>
+                            Personaje versátil con manejo de recursos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- NOOB -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://th.bing.com/th/id/OIP.EdmqbZuEBkICtGZVXVO8IgHaHm?w=185&h=190&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            008
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SURVIVALIST
+                        </span>
+
+                        <h3>
+                            NOOB
+                        </h3>
+
+                        <p>
+                            Personaje equilibrado y preparado para cualquier situación.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SHEDLETSKY -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            009
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SENTINEL
+                        </span>
+
+                        <h3>
+                            SHEDLETSKY
+                        </h3>
+
+                        <p>
+                            Especialista en combate y protección.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TAPH -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            010
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SUPPORT
+                        </span>
+
+                        <h3>
+                            TAPH
+                        </h3>
+
+                        <p>
+                            Sigilo y preparación del terreno.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TWO TIME -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                        <img src="https://static.wikia.nocookie.net/forsaken2024/images/0/09/Two_Time.jpeg/revision/latest/scale-to-width-down/250?cb=20250614182403" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            011
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SENTINEL
+                        </span>
+
+                        <h3>
+                            TWO TIME
+                        </h3>
+
+                        <p>
+                            Supervivencia, sigilo y una segunda oportunidad.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VEERONICA -->
+
+                <article class="character-card">
+
+                    <div class="character-image">
+
+                    <img src="https://th.bing.com/th/id/OIP.z0Q3T6EuBwQ4cVOH9rDu-QAAAA?w=149&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            012
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role">
+                            SURVIVALIST
+                        </span>
+
+                        <h3>
+                            VEERONICA
+                        </h3>
+
+                        <p>
+                            Movilidad y preparación para escapar.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= KILLERS ================= -->
+
+        <section id="killers" class="character-section killers-section">
+
+            <div class="section-title killer-title">
+
+                <p>// ARCHIVE 02</p>
+
+                <h2>
+                    KILLERS
+                </h2>
+
+                <span>
+                    ELLOS NO CORREN. ELLOS CAZAN.
+                </span>
+
+            </div>
+
+
+            <div class="character-grid">
+
+
+                <!-- 1X1X1X1 -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K01
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            1X1X1X1
+                        </h3>
+
+                        <p>
+                            Un aterrador killer especializado en controlar el área.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AZURE -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.GG53SmuCNsRBUjALYUC4XgHaHa?r=0&pid=ImgDet&w=474&h=474&rs=1&o=7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K02
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            AZURE
+                        </h3>
+
+                        <p>
+                            Un killer de control con una presencia devastadora.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- C00LKIDD -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="https://i.pinimg.com/236x/f0/d7/fb/f0d7fb1978fd62b5f2418d38894c5bf8.jpg" alt="">
+                            
+                        
+                        >
+
+                        <div class="image-number">
+                            K03
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            C00LKIDD
+                        </h3>
+
+                        <p>
+                            Rápido, agresivo y especializado en perseguir.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GUEST 666 -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.Fb8DOmxSwNINBkeCCAwzCAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K04
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            GUEST 666
+                        </h3>
+
+                        <p>
+                            Una presencia aterradora especializada en desgaste.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- JOHN DOE -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.1IdqVeA5jfqdiF2seBt9LAHaG_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+                        
+                            
+                        >
+
+                        <div class="image-number">
+                            K05
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            JOHN DOE
+                        </h3>
+
+                        <p>
+                            Especialista en trampas y control del mapa.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- NOLI -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="https://th.bing.com/th/id/OIP.ax_TcW9rqzNUXrfEzRYh0AHaGj?w=186&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K06
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            NOLI
+                        </h3>
+
+                        <p>
+                            Un killer de engaño, velocidad y persecución.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- NOSFERATU -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K07
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            NOSFERATU
+                        </h3>
+
+                        <p>
+                            Un cazador especializado en emboscadas y sigilo.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SLASHER -->
+
+                <article class="character-card killer-card">
+
+                    <div class="character-image">
+
+                        <img src="data:image/webp;base64,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" alt="">
+                            
+                            
+                        >
+
+                        <div class="image-number">
+                            K08
+                        </div>
+
+                    </div>
+
+                    <div class="character-info">
+
+                        <span class="role killer-role">
+                            KILLER
+                        </span>
+
+                        <h3>
+                            SLASHER
+                        </h3>
+
+                        <p>
+                            Un killer agresivo diseñado para persecuciones rápidas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LORE ================= -->
+
+        <section id="lore" class="lore-section">
+
+            <div class="section-title">
+
+                <p>// ARCHIVE 03</p>
+
+                <h2>
+                    FORSAKEN ARCHIVES
+                </h2>
+
+            </div>
+
+
+            <div class="terminal">
+
+                <div class="terminal-header">
+
+                    <span>●</span>
+                    <span>●</span>
+                    <span>●</span>
+
+                    <p>
+                        FORSAKEN_SYSTEM.exe
+                    </p>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <p>
+                        > INITIALIZING SYSTEM...
+                    </p>
+
+                    <p>
+                        > CONNECTION ESTABLISHED.
+                    </p>
+
+                    <p>
+                        > SURVIVORS FOUND: 12
+                    </p>
+
+                    <p>
+                        > KILLERS FOUND: 8
+                    </p>
+
+                    <p>
+                        > THREAT LEVEL: EXTREME
+                    </p>
+
+                    <p class="purple-text">
+                        > WELCOME TO FORSAKEN.
+                    </p>
+
+                    <p class="warning-text">
+                        > DO NOT TRUST ANYONE.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FORSAKEN<span>_</span>
+        </div>
+
+        <p>
+            FAN-MADE WEBSITE
+        </p>
+
+        <p>
+            SURVIVE THE DARKNESS.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="warningModal" class="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                onclick="closeWarning()">
+                ×
+            </span>
+
+            <div class="modal-icon">
+                ⚠
+            </div>
+
+            <h2>
+                WARNING
+            </h2>
+
+            <p>
+                You are entering the FORSAKEN archives.
+            </p>
+
+            <button onclick="closeWarning()">
+                ENTER
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- ================= PERSONAJE ALEATORIO ================= -->
+
+<div class="random-character-container">
+
+    <button
+        id="randomCharacter"
+        class="random-character-button"
+        type="button">
+
+        <span class="random-dice">🎲</span>
+
+        PERSONAJE ALEATORIO
+
+    </button>
+
+    <p id="randomResult" class="random-result">
+        ¿QUIÉN TE TOCARÁ?
+    </p>
+
+</div>
+
+<!-- ================= CAMBIO DE TEMA ================= -->
+
+<div class="theme-controls">
+
+    <button
+        id="lightMode"
+        class="theme-button"
+        type="button"
+        title="Modo claro">
+
+        ☀️
+
+    </button>
+
+    <button
+        id="darkMode"
+        class="theme-button active"
+        type="button"
+        title="Modo oscuro">
+
+        🌙
+
+    </button>
+
+</div>
+
+<div class="theme-controls">
+
+    <button id="lightMode" type="button">
+        ☀️
+    </button>
+
+    <button id="darkMode" type="button">
+        🌙
+    </button>
+
+</div>
